@@ -46,31 +46,26 @@ We have collected the data of the humidity and temprature from the sensors and w
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------| 
-| 1       | Write the Problem context          | We identified what kind of problem the client could have and how that is affecting his daily routine             | 10min | Nov 22 | A
-| 2       | Write the Problem Defenition  | We wrote the problem defenition to have a clear understanding of what the client needs | 20min | Nov 22 | A
-| 3       | Create a bill of materials  | We identified all the materials we need for the project and made a list | 20 min | Nov 22 | A
-| 4       | Understand how Raspberry Pi work  | We reaserched about raspberry pi to have a deeper understanding of how the servers and SSH works | 40 min | Nov 24 | A
-| 5       | Reaserch how DHT11 sensor work  | We got a basic understanding of how the breadboard and DHT11 sensor works, we also learnt how to connect them together | 30 min | Nov 24 | A
-| 6       | Signing Scope of Work  | We got all the materials from Dr. Ruben that we listed up, and signed the Scope of work document | 5 min | Nov 25 | A
-| 7       | Create a circuit that connects from Raspberry Pi to breadboard | We made a circuit to test run and check if the whole thing works by transmitting power, it tool multiple tries to get it right | 40 min | Nov 27 | B
-| 8       | Create a CSV file for the sensors | We made a CSV file to store all the data that we collected | 20 min | Nov 30 | C
-| 9       | Put all the data into a list format | We put all the data into a new file in a list format to have a better view of all the data | 30 min | Nov 30 | C
-| 10      | Add timelines to our CSV files | We added a timestamp of when the data was collected to have a better understanding of the information we collect | 30 min | Nov 31 | C
-| 11      | Make the graphs | We made the graphs to show the data that we collected easier and test if the room is suitable for violins | 60 min | Dec 4 | C
-| 12      | Create all the graphs in criteria | We made the graphs that are required to complete the project using matplotlib. We had to make graphs that show the mean, standard deviation, minimum, maximum, and median for both remote and indoor sensors | 160 min | Dec 6 | C
-| 13      | Make the non-linear graph model | We made the non-linear model for all of the graphs so that our customer will have a clear understanding of the pattern of the data | 60 min | Dec 6 | C
-| 14      | Create the predictions | We made the predictions of what will happen in the next 12 hours based on the data we collected for 2 days | 60 min | Dec 8 | C
-| 15      | Making the system diagram | We made the system diagram to see all the materials we used | 30 min | Dec 10 | C
-| 16      | Update GitHub | We uploaded all of our work to GitHub that we completed until this point | 45 min | Dec 10 | B
-| 17      | Make a user in the server | We made a user in the remote server | 50 min | Dec 12 | C
-| 18      | Get the access token | We got the access token after we made the user to login and post the data | 10 min | Dec 12 | C
-| 19      | Post the data to the server | We posted all of our readings to the remote server but we did it after we collected all the readings | 30 min | Dec 12 | C
-| 20      | Reacerch about the correlation of temperature and violins | We researched more about the affect of temperature on violins and the favourable temperatures and humidity for the violin | 20 min | Dec 13 | D
-| 21      | Make the presentation | We madew a presentation for the video required as a criteria | 20 min | Dec 13 | D
-| 22      | Record the video | We did some rehearsals and recorded the video and uploaded it on google drive | 20 min | Dec 13 | D
-| 23      | Making the poster | We made the poster with some of the data we collected and our process of the project and up loaded it on GitHub | 40 min | Dec 13 | D
-| 24      | Finalize the GitHub | We went through all of the criteria in GitHub and added some tings that we missed | 30 min | Dec 13 | D
-| 25      | Send a email to Dr Ruben | Sent email with the link to our unit 2 project repository for grading | 5 min | Dec 13 | A
+| 1       | Have a meeting with my client Daimei | We talked a bit about making a music streaming service and as we discussed the details further it ended up to be a quite long meeting | 3 hours | June 14 | A
+| 2       | Write the Problem Defenition | We wrote the problem defenition to have a clear understanding of what the client needs | 20 minuites | Jine 16 | A
+| 3       | Understand how streamig services work and how I will be able to emulate one | I reaserched about basic work flow of a music streaming service by watching videos | 40 min | June 20 | A
+| 4       | Reaserch the possible ways to make a music streaming website on flask | Since I was not knowledgable about how I will be able to make a streaming service using flask and python I was to have a long reaserch finding a way to create it. | 1 hour 35 min | June 20 | A
+| 5       | Write a Proposed Solution | After my client and I clarified the issues so I decided to create a solution and this time I wasnt able to meet with the client | 30 min | June 20 | A
+| ??      | Write a Design Staement | I decided to create a design statement as well to have a clear vision of what I will be createing | 30 min | June 20 | A
+| ??      | Make the 6 Success Criterias | I came up with the 6 success criteria to have a clear goal for the finished product that I could check it off when completed, but this might be subject to change | 45 min | June 20 | A
+| ??      | Make the title artwork for the github | I decided to make the title artwork and used AI art generation software, and I edited in some more details including the logo TUNECORE | 60 min | June 20 | A
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      | Make the presentation | We madew a presentation for the video required as a criteria | 20 min | Dec 13 | D
+| ??      | Record the video | We did some rehearsals and recorded the video and uploaded it on google drive | 20 min | Dec 13 | D
+| ??      | Making the poster | We made the poster with some of the data we collected and our process of the project and up loaded it on GitHub | 40 min | Dec 13 | D
+| ??      | Finalize the GitHub | We went through all of the criteria in GitHub and added some tings that we missed | 30 min | Dec 13 | D
+| ??      | Send a email to Dr Ruben | Sent email with the link to our unit 2 project repository for grading | 5 min | Dec 13 | A
 
 ## Test Plan
 

@@ -20,21 +20,21 @@ I wil develop a music streaming platform, and there will be two distinctively di
 
 ## Success Criteria
 
-1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours. 
-1. ```[HL]``` The local variables will be measure using a set of 4 sensors around the dormitory.
-2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```
-3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
-4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server.
-5. Create a prediction the subsequent 12 hours for both temperature and humidity.
-6. A poster summarizing the visual representations, model and analysis is created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
+| No. | Success critieria	         | Issue tackled       |
+|----------------------------|---------------------------------|----------------|
+| 1 | The platform has a User system with a password and ability to link with the other social accounts such as google and twitter. | The client wanted a secure system since the service has two options of subscription | 
+| 2 | The platform has different GUIs for different subscription types. | The client wanted a more attractive GUI for the VIP users to increase the VIP subscription | 
+| 3 | The platform allows users to search up songs and artists, also make a playlist which you can also share with people. | This finction increases users udability and the also increase the artists stream amaount | 
+| 4 | The platform has a VIP section which is only accesible to the VIP users and it shows the new release of ablums and merch, also the live concert information.  | This was a feature that was requested from the client | 
+| 5 | The platform has a miles system where you get a certain amout of miles for every streaming length you reach.  | This was also a function tht was requested to add by the client | 
+| 6 | The platform has a section called "create" where you can fill out a survey and request to book a meeting with the client to discuss about signing a contract with the label. | Since the client was saying that he wanted to expand his buisness buy accepting more underground artists this was a function created accordingly for his issue | 
 
 # Criteria B: Design
 
 ## System Diagram **HL**
 ![](System_Diagram.jpg)
 
-**Fig.2** shows the system diagram for the proposed solution (**HL**). The indoor variables will be measured using a Raspberry PI and four DHT11 sensors located inside a room. Four sensors are used to determine more precisely the physical values and include measurement uncertainty. The outdoor variables will be requested to the remote server using a GET request to the API of the server at ```192.168.6.147/readings```. The local values are stored in a CSV database locally and POST to the server using the API and TOKEN authentication. A laptop computer is used for remotely controlling the local Rasberry Pi using a Dekptop sharing application (VNC Viewer). (Optional) Data from the local raspberry is downloaded to the laptop for analysis and processing.
-
+**Fig.2** shows the system diagram for the proposed solution, I used pycharm and flask to develop the website.
 ## Data Transmission
 
 We have collected the data of the humidity and temprature from the sensors and write it into the csv file that we have created. And from that file we made a program that reads each line from the csv file and sends those data to the server in the json format using while loop.

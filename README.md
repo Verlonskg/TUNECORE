@@ -35,13 +35,6 @@ I wil develop a music streaming platform, and there will be two distinctively di
 ![](System_Diagram.jpg)
 
 **Fig.2** shows the system diagram for the proposed solution, I used pycharm and flask to develop the website.
-## Data Transmission
-
-We have collected the data of the humidity and temprature from the sensors and write it into the csv file that we have created. And from that file we made a program that reads each line from the csv file and sends those data to the server in the json format using while loop.
-
-![CSV.png](csv_file1.png)
-
-**Fig.3** Above is the csv file that we used to store the data.
 
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |

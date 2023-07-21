@@ -46,14 +46,25 @@ We have collected the data of the humidity and temprature from the sensors and w
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------| 
-| 1       | Have a meeting with my client Daimei | We talked a bit about making a music streaming service and as we discussed the details further it ended up to be a quite long meeting | 3 hours | June 14 | A
-| 2       | Write the Problem Defenition | We wrote the problem defenition to have a clear understanding of what the client needs | 20 minuites | Jine 16 | A
+| 1       | Have a meeting with my client Daimei | We talked a bit about making a music streaming service and as we discussed the details further it ended up to be a quite long meeting | 3 h | June 14 | A
+| 2       | Write the Problem Defenition | We wrote the problem defenition to have a clear understanding of what the client needs | 20 min | Jine 16 | A
 | 3       | Understand how streamig services work and how I will be able to emulate one | I reaserched about basic work flow of a music streaming service by watching videos | 40 min | June 20 | A
 | 4       | Reaserch the possible ways to make a music streaming website on flask | Since I was not knowledgable about how I will be able to make a streaming service using flask and python I was to have a long reaserch finding a way to create it. | 1 hour 35 min | June 20 | A
 | 5       | Write a Proposed Solution | After my client and I clarified the issues so I decided to create a solution and this time I wasnt able to meet with the client | 30 min | June 20 | A
-| ??      | Write a Design Staement | I decided to create a design statement as well to have a clear vision of what I will be createing | 30 min | June 20 | A
-| ??      | Make the 6 Success Criterias | I came up with the 6 success criteria to have a clear goal for the finished product that I could check it off when completed, but this might be subject to change | 45 min | June 20 | A
-| ??      | Make the title artwork for the github | I decided to make the title artwork and used AI art generation software, and I edited in some more details including the logo TUNECORE | 60 min | June 20 | A
+| 6       | Write a Design Staement | I decided to create a design statement as well to have a clear vision of what I will be createing | 30 min | June 20 | A
+| 7       | Make the 6 Success Criterias | I came up with the 6 success criteria to have a clear goal for the finished product that I could check it off when completed, but this might be subject to change | 45 min | June 20 | A
+| 8       | Make the title artwork for the github | I decided to make the title artwork and used AI art generation software, and I edited in some more details including the logo TUNECORE | 60 min | June 20 | A
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
+| ??      |  |  |  |  |
 | ??      |  |  |  |  |
 | ??      |  |  |  |  |
 | ??      |  |  |  |  |

@@ -1,7 +1,7 @@
 # Computer Science IA - TUNECORE a music streaming platform
 This is a music streaming site that allows people to listen to indie artists and choose genres and countries to your liking.
 
-![IMAGE](TUNECORE.png)
+![TUNECORE](https://github.com/Verlonskg/TUNECORE/assets/111814707/89ac97a9-9fdc-4fea-821a-e5b5dfcd0d70)
 **Fig.1**
 
 # Criteria A: Planning

@@ -15,7 +15,8 @@ Baised on the client's request I will be developing a web browser baised music s
 Since the client is willing to only feature the artist from his record label with unrelesed ablums, there will be a subsctiption for regular customers. 
 
 ## Design statement
-We will make a poster with all of our progress documented. We will have a system diagram, the materials we used, the set up. And the process of actually programming and running it.  graphs that show the temperature and humidity in mean, standad deviation, minimum, maximum, and median so that the client will understand what the humidity and the temperature in his room is in one glance. We will also add a graph that shows a prediction of the subsequent 12 hours for both temperature and humidity. As a conclusion we will talk about the health effects that this data represents and the effect to the violin as well.
+
+I wil develop a music streaming platform, and there will be two distinctively different sections that will be slpit for the regular subsctibed customers and VIP subscribed customers. The regular one will have a while baised UI with only the basic functions and there is no access to the VIP page where you can preview uncoming events, merch, and songs exclusively.There you also get discounts for live event tickets and more.
 
 ## Success Criteria
 

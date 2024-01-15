@@ -18,6 +18,24 @@ Since the client is willing to only feature the artist from his record label wit
 
 I wil develop a music streaming platform, and there will be two distinctively different sections that will be slpit for the regular subsctibed customers and VIP subscribed customers. The regular one will have a while baised UI with only the basic functions and there is no access to the VIP page where you can preview uncoming events, merch, and songs exclusively.There you also get discounts for live event tickets and more.
 
+## Rationale for proposed solution
+
+### Flask
+For developing the website app, I will be using Flask framework. Flask is used by many developers for making websites that are easy to use and load fast, which is great for our users. Flask is also flexible, meaning if we need to add more features or make changes down the line, it won't be as difficult, and again this will be favourable for scalability as well.
+
+### Python
+
+I chose Python to programme most of the website's functionality, so this will be the primary language that I will be using for this project. It's great for web development because it has many frameworks that make the job easier. Also, it's really handy when working with databases, which is perfect for setting up an inventory on the website. Python also has lots of libraries that simplify complex functions, making my coding work more efficient, and because it is a very common language that are used my many developers, it will be good for future scalability and expansion too.
+
+### HTML
+HTML is my choice for developing the website's layout and structure of the graphic users interfase (GUI) of TUNECORE. By using HTML, I can organize content effectively, making sure that the website is not only functional but also easy for future developers to navigate. HTML is the backbone of any website, providing the basic framework that is very well organized so it is a reliable tool for web development, ensuring that the site will work well across different browsers and devices.
+
+### CSS 
+I will be using CSS to create the design for the webpage that will catch user's attention and an easy to understand user interface. The project will have best maintainability and scalability by keeping the structure using HTML and design with the CSS. Its versatility and wide range of features, such as  animations and adaptable design can help me to create an aesthetically pleasing and interesting user experience that appeals to both VIP and regular members.
+
+### SQL
+For managing the database, I will be using SQL. It's really fast, which means our web pages will be able to connect the media and data stored in SQL database quickly when the website is accessed. Plus, our database will be quite complex with the user informations and media used for posting the audio that will be streamed. So SQL is the best choice for handling that kind of complexity efficiently, also allowing me to add more to the database very quickly.
+
 ## Success Criteria
 
 | No. | Success critieria	         | Issue tackled       |

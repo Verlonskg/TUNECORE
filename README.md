@@ -49,10 +49,50 @@ For managing the database, I will be using SQL. It's really fast, which means ou
 
 # Criteria B: Design
 
-## System Diagram **HL**
-![](System_Diagram.jpg)
-
+## System Diagram
+![](https://github.com/Verlonskg/TUNECORE/blob/main/Pictures/System_Diagram.jpg)
 **Fig.2** shows the system diagram for the proposed solution, I used pycharm and flask to develop the website.
+
+## ER Diagram 
+![](https://github.com/KaiFig/IA/blob/main/pictures/CS%20IA%20ER%20Diagram.jpg)
+**Fig 3** ER diagram showcasing the database present 
+
+### Table
+Table Users:
+|id    |Username    | Passwords | 
+|---|---|----|
+|1     |   Kai      |******     | 
+
+
+Table Event:
+|id   | user_id  | time  | Date   | Location | equipment  | 
+|---|-----|----|-----|-----|-----|
+|1    | 1        | 19:00  | 12/12/23  | Gym  | Lights  | 
+
+Table Equipment:
+|id   | user_id    | amount   | location   | Notes  | 
+|---|-----|----|-----|-----|
+|1   | 1     | 4       | Small caf  | None
+
+Table Posts:
+
+|id  | user_id   | title  | content   | file  | equipment  | 
+|----|---------|-------|-------|-----|-----|
+|1   |1       |Dance showcase    | Needed to use mixer and address setter   | 32_tech_pic.jpeg  | LED's, mixer, mics, speakers  | 
+
+
+
+## Wireframe Diagram 
+![](https://github.com/KaiFig/IA/blob/main/pictures/Wireframe%20Diagram.jpg)
+**Fig 4** This was my plan for designing my website 
+
+## Flowchart
+
+![](https://github.com/KaiFig/IA/blob/main/pictures/CS%20IA%20Flowchart%201.jpg)
+**Fig 5** This showcases the flowchart for the calendar page 
+
+![](https://github.com/KaiFig/IA/blob/main/pictures/CS%20IA%20Flowchart%202.jpg)
+**Fig 6** This is the flowchart for the login page.
 
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |

@@ -82,8 +82,8 @@ Test Concert:
 
 
 ## Wireframe Diagram 
-![](https://github.com/KaiFig/IA/blob/main/pictures/Wireframe%20Diagram.jpg)
-**Fig 4** This was my plan for designing my website 
+![](https://github.com/Verlonskg/TUNECORE/blob/main/Pictures/Wireframe%20Diagram.png)
+**Fig 4** This is the wireframe for the original design of TUNECORE 
 
 ## Flowchart
 

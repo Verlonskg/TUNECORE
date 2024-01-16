@@ -55,30 +55,29 @@ For managing the database, I will be using SQL. It's really fast, which means ou
 
 ## ER Diagram 
 ![](https://github.com/Verlonskg/TUNECORE/blob/main/Pictures/ER%20Diagram.png)
-**Fig 3** ER diagram showcasing the database present 
+**Fig 3** ER diagram showing how the databases are connected
 
 ### Table
-Table Users:
+Test Users:
 |id    |Username    | Passwords | 
 |---|---|----|
-|1     |   Kai      |******     | 
+|1     |   Daimei      |**********     | 
 
-
-Table Event:
-|id   | user_id  | time  | Date   | Location | equipment  | 
-|---|-----|----|-----|-----|-----|
-|1    | 1        | 19:00  | 12/12/23  | Gym  | Lights  | 
-
-Table Equipment:
-|id   | user_id    | amount   | location   | Notes  | 
+Test Artist:
+|id | artist_id | artist_genre | artist_name | streaming_num |
 |---|-----|----|-----|-----|
-|1   | 1     | 4       | Small caf  | None
+|1    | 1        | Dance  | Daimei  | 1,237,390  |
 
-Table Posts:
+Test Song:
+|id | artist| title   | genre | file | date | 
+|---|-----|----|-----|-----|----|
+|1   | Daimei     | Let the Beat Drop       | Dance  | 1 | 12/23/2023 |
 
-|id  | user_id   | title  | content   | file  | equipment  | 
-|----|---------|-------|-------|-----|-----|
-|1   |1       |Dance showcase    | Needed to use mixer and address setter   | 32_tech_pic.jpeg  | LED's, mixer, mics, speakers  | 
+Test Concert:
+
+|id  | artist   | date  | location   | ticket number | 
+|----|---------|-------|-------|-----|
+|1   | Daimei       |4/13/2024    | Tokyo Central Dome | 5,000  |
 
 
 

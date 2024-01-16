@@ -54,7 +54,7 @@ For managing the database, I will be using SQL. It's really fast, which means ou
 **Fig.2** shows the system diagram for the proposed solution, I used pycharm and flask to develop the website.
 
 ## ER Diagram 
-![](https://github.com/KaiFig/IA/blob/main/pictures/CS%20IA%20ER%20Diagram.jpg)
+![](https://github.com/Verlonskg/TUNECORE/blob/main/Pictures/ER_Diagram.jpg)
 **Fig 3** ER diagram showcasing the database present 
 
 ### Table

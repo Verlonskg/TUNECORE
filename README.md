@@ -373,7 +373,7 @@ Lastly, implementing a better feedback system, where users can easily suggest fe
 
 ## Client Interview
 
-
+![]()
 
 ## Success Criteria Contract
 
@@ -381,4 +381,5 @@ N/A
 
 ## Client Feedback
 
+![]()
 

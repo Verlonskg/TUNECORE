@@ -130,3 +130,220 @@ Test Concert:
 
 ## Test Plan
 
+
+
+# Criteria C: Development
+## Existing Tools
+
+| Software/Development Tools | Coding Structure Tools          | Libraries      |
+|----------------------------|---------------------------------|----------------|
+| PyCharm                    |Encryption                       | Flask          |
+| Relational databases       | Objects, attributes and methods | sqlite3        |
+| SQLite                     | If statements                   | passlib        |
+| Python                     |                                 | Datetime       |
+| Chat GPT                   |                                 | werkzeug.utils | 
+
+## List of techniques used
+1. Flask library/routes
+2. For loops
+3. If statements
+4. Password hashing
+5. Interacting with databases
+6. Lists
+7. Cookies
+8. SQL queries
+
+
+
+## Success Criteria 1 and 5
+The first criterion was to have an inventory list of all the equipment that the tech crew has
+```.py
+if request.cookies.get('user_id'):
+        user_id = request.cookies.get('user_id')
+        db = database_worker("tech_web.db")
+```
+With the above code, I created an algorithm for the user so that they can upload new posts to the tech crew site. First, I make sure to validate the user as in all the other pages needs to be logged in to be able to access it preventing unauthorized access.
+```.py
+            if len(name) > 0 and len(amount) > 0 and len(notes)>0:
+                new_inventory = f"INSERT into equipment (naame, location, amount, notes, user_id) values('{name}','{location}','{amount}', '{notes}', {user_id})"
+                print(new_inventory)
+                db.run_save(query=new_inventory)
+                inventory = db.search("Select * FROM equipment")
+                return redirect(url_for('inventory', inventory = inventory ))
+            else:
+                msg = "Please complete all fields"
+                return render_template("new_inventory.html", message=msg)
+        return render_template("new_inventory.html")
+
+```
+After getting user information, it is validated, and I use the database worker function to insert it into the inventory. If the values are not valid, the user is redirected and asked to fill out the form again. Then the user was redirected to the inventory page. 
+
+```.py
+inventory = db.search("Select * FROM equipment")
+                return redirect(url_for('inventory', inventory = inventory ))
+
+```
+
+When the user was redirected to the inventory, I had to search the database again by using the database_worker function, then using the return redirect(url_for  ) tool to redirect them to the inventory that would display all of the equipment including the new one. 
+```.py
+        db = database_worker("tech_web.db")
+        inventory = db.search("Select * FROM equipment")
+
+```
+Using the database worker function enables me to simplify my code as I need to connect to the database throughout the application. Additionally, this enables future developers to have an easier time of expanding my application as they can reuse this vital piece of code. 
+
+
+
+
+## Success Criteria 2
+Login and Registration page
+
+```.py
+@app.route('/signup', methods=["GET","POST"])
+def signup():
+    msg = ""
+    if request.method == "POST":
+```
+For the signup page, I follow the same process as the new_posts page, checking if the method is posted to make sure that the user is trying to signup. 
+
+```.py
+        username = request.form['username']
+        passwd=request.form['passwd']
+        passwdconfirm=request.form['confirmpasswd'] #Get the information from the UI
+        tech_web = request.form['tech_question']
+```
+Then I get the information from the UI
+
+```.py
+        if tech_web == "Smiley face emoji":
+            if passwd==passwdconfirm:
+                hash = encrpyt_password(passwd) #Encrypt the password for better security
+                db = database_worker("tech_web.db")
+                new_post = f"INSERT into users (username,password) values('{username}','{hash}')"  #Save in the database to call back later
+                db.run_save(query=new_post)
+                return redirect(url_for('login'))
+            else:
+                msg = "Passwords do not match"
+        else:
+            msg = "You are not a tech crew member and cannot create an account"
+            return render_template("signup.html", message=msg)
+    return render_template("signup.html", message=msg)
+
+```
+The passwords are checked and if they don't match, it displays an error code and the user has to reinput it. Additionally, I have added a tech crew question which enables the site to be restricted to only tech crew members. If the passwords match then I first hash the password to make it more secure, to do this I call on a function that I imported from my library called encrypt password. Then I used the database_worker class to insert the information into the users page in the social_net database and redirect them to my login page. 
+
+```.py
+@app.route('/login', methods=["GET","POST"])
+def login():
+    msg = ""
+    if request.method == "POST":
+        username = request.form['username']
+        passwd=request.form['passwd']
+        db = database_worker("tech_web.db")
+        user = db.search(f"Select * from users where username = '{username}'") #Check the user in the database
+```
+For the login, in addition to checking the method and However, to check that the username is correct I use the database_worker function to see if the user does exist
+
+```.py
+        if user:
+            user = user[0] #because search function returns a list
+            id, email_db, hashed = user
+            if check_password(hashed_password=hashed, user_password=passwd): #Call function from my_lib to check password
+                db = database_worker("tech_web.db")
+                posts = db.search("Select * FROM posts")
+                response = make_response(redirect('home'))
+                response.set_cookie('user_id', f"{id}")#Set cookie for functions later in the website
+                return response
+            else: msg = "Please enter the correct password"
+        else:
+            msg = "user does not exist"
+    return render_template("login.html", message=msg)
+
+```
+If it does, I get the information from that row and then use the check_password function imported from my library to check if the passwords are correct. If everything is good, I first set the cookie for the user so that I am able to use that later. Then I redirect it to the home page by getting all the posts from the post page in the database, then redirecting to the home page. 
+
+## Success Criteria 3
+Tech request form
+
+```.py
+@app.route('/', methods=["GET","POST"])
+def home():
+    msg = ""
+    if request.method == "POST":
+        location = request.form('location')
+        date = request.form('date')
+        time = request.form('time')
+        equipment = request.form('Equipment')
+        contact_name = request.form('Name of Contact')
+        contact_email = request.form('Contact person email')
+```
+For the form, I made it the home page with the route '/' as it would enable the general public to access it without having to go through a signup or login process. Like the posts and the signups, I followed the same process, checking the method, and then getting the information from the form.
+
+```.py
+        if len(location) > 0 and len(date) > 0 and len(time) > 0 and len(equipment) > 0 and len(contact_name) > 0 and len(contact_email) > 0:
+            if check_email(contact_email):
+                db = database_worker("tech_web.db")
+                db.run_save(f"INSERT INTO event (location, date, time, equipment, contact_name, contact_email) VALUES ('{location}', '{date}', '{time}', '{equipment}', '{contact_name}', '{contact_email}')")
+                msg = "Event added"
+        else:
+            msg = "Please fill in all fields"
+
+    return render_template("home.html", message=msg)
+```
+Then I validated the inputs and used the database worker function to enable me to enter them into the database. Lastly, I made sure to put a message so that people would know that their request was submitted or if the request was invalid. 
+
+
+## Success Criteria 4
+
+```.py
+
+@app.route('/calendar', methods=['GET','POST'])
+def calendar():
+    if request.cookies.get('user_id'):
+        user_id = request.cookies.get('user_id')
+        db = database_worker("tech_web.db")
+```
+This enables the events that people request tech support from to be displayed on the calendar page for tech crew users. I first make sure that the user is logged in, then I get the user_id and connect to the database.
+
+```.py
+        events = db.search("Select * FROM event order by date asc")
+        current_events = []
+        for i in events:
+            date1 = i[2]
+            date_object = datetime.strptime(date1, '%Y-%m-%d').date()
+```
+ First, to make sure that the events are in order, I make sure to use the "order by date asc" SQL query. Then, I initiated an empty list to hold future events. I go through every event from the database in a for loop and I get the date and then strip it using the datetime function to make sure it is in the correct format.
+
+ ```.py
+            date2 = date.today()
+            if date_object>=date2:
+                current_events.append(i)
+            else:
+                item_id = i[0]
+                db.run_save(f"DELETE FROM event WHERE id = {item_id}")
+                db.close()
+        return render_template("calendar.html", events=current_events, user_id = user_id)
+    else:
+        return redirect('login')
+
+
+```
+I then get the current date and compare them to see if the event has already passed. If it hasn't passed, I append it to the current_event list. If it did, I get the ID and then delete the event from the database. At the end, I make sure to return the calendar page.
+Deleting the events that had passed was the most problematic as I had to first get the date of each event, and then I had to find the right function from the DateTime library to format it correctly. Then I had to get the current date so that I could compare. This enabled me to fulfil success criteria number 4
+
+
+
+## Pattern recognition
+
+```.py
+from my_lib import database_worker, encrpyt_password, check_password
+```
+I made this to simplify my code. When saving something to the database, I can just call the function instead of writing the code all out every single time. Additionally, if I need to change something I only have one point to change. This is an example of the computational thinking skill pattern recognition as I was able to see that this is something that is repeated throughout. Additionally, it also shows algorithm design as I used an algorithm that enabled me to do the same things many times. 
+
+
+## User validation
+
+```.py
+if request.cookies.get('user_id'):
+```
+For each web route, I made sure to request the cookies from the user. This made sure that the user was already logged in and had a cookie. This means that even if someone knows the URL of the website and they input the URL into their search bar, they are not able to access it. This increases the security of the whole website as people need to have had accounts made and have to log in as normal.

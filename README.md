@@ -169,9 +169,8 @@ Test Concert:
 | Software/Development Tools | Coding Structure Tools          | Libraries      |
 |----------------------------|---------------------------------|----------------|
 | PyCharm                    |Encryption                       | Flask          |
-| Relational databases       | Objects, attributes and methods | sqlite3        |
 | SQLite                     | If statements                   | passlib        |
-| Python                     |                                 | Datetime       |
+| Relational databases       | Objects, attributes and methods | sqlite3        |
 
 ## List of techniques used
 1. For loops
@@ -337,11 +336,11 @@ user.link_social_account("daimei", "twitter_123")
 | Criteria | Met or Not? | Feedback |
 |----------|-------------|----------|
 | 1. The platform must have a secure user system with password-based authentication and options to link Google and Twitter accounts. | Met | The user system functions securely as intended. Some users suggested adding more social platforms for linking. |
-| 2. The platform must present different GUIs tailored to the subscription levels, with exclusive designs for VIP users. | Met | The GUI differentiation is effective. VIP users reported a positive experience, though some requested additional customization features. |
+| 2. The platform must present different GUIs tailored to the subscription levels, with exclusive designs for VIP users. | Met Partially | The GUI differentiation is effective. VIP users reported a positive experience, though some requested additional customization features. |
 | 3. Users should be able to search for songs and artists, create playlists, and share them with other users. | Met | Search and playlist functionalities are robust and user-friendly. Sharing is straightforward, but enhancements for social interaction are recommended. |
-| 4. VIP section displays new releases and exclusive content like merch and live concert info, accessible only to VIP subscribers. | Met | The VIP section is well-received. Some users requested push notifications for new content. |
+| 4. VIP section displays new releases and exclusive content like merch and live concert info, accessible only to VIP subscribers. | Not Met | The VIP section is well-received. Some users requested push notifications for new content. |
 | 5. Implement a miles system that rewards users with points based on their streaming activity. | Met | The miles system is engaging and motivates continued use. Feedback includes requests for more redemption options. |
-| 6. Include a 'Create' section where artists can submit their work and request to book meetings with the label for contract discussions. | Met | The 'Create' section is applauded for its artist engagement. Suggestions for a more guided submission process were made. |
+| 6. Include a 'Create' section where artists can submit their work and request to book meetings with the label for contract discussions. | Met Partially | The 'Create' section is applauded for its artist engagement. Suggestions for a more guided submission process were made. |
 
 
 ## Suggestions for Future Development

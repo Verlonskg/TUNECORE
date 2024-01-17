@@ -307,17 +307,30 @@ def submit_create_request():
 This form facilitates artist engagement, allowing users to fill out surveys and request meetings with the label, catering to the client's business expansion strategy.
 
 
-## Pattern recognition
+## Pattern Recognition
 
-```.py
-from my_lib import database_worker, encrpyt_password, check_password
+**1. User Authentication and Social Media Integration**
+
+Recognizing the need for secure and versatile user authentication, the project has a consistent approach to handling user login, including options for social media integration. This pattern ensures proper security and enhances user experience.
+
+```python
+class User:
+    # Constructor with basic user info and social accounts dictionary
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password
+        self.social_accounts = {}
+
+    # Method to link a social media account
+    def link_social_account(self, platform, account_id):
+        self.social_accounts[platform] = account_id
+
+# Example of creating a user and linking social accounts
+user = User("daimei", "1234")
+user.link_social_account("daimei", "google_123")
+user.link_social_account("daimei", "twitter_123")
 ```
-I made this to simplify my code. When saving something to the database, I can just call the function instead of writing the code all out every single time. Additionally, if I need to change something I only have one point to change. This is an example of the computational thinking skill pattern recognition as I was able to see that this is something that is repeated throughout. Additionally, it also shows algorithm design as I used an algorithm that enabled me to do the same things many times. 
 
 
-## User validation
 
-```.py
-if request.cookies.get('user_id'):
-```
-For each web route, I made sure to request the cookies from the user. This made sure that the user was already logged in and had a cookie. This means that even if someone knows the URL of the website and they input the URL into their search bar, they are not able to access it. This increases the security of the whole website as people need to have had accounts made and have to log in as normal.
+# Criteria E

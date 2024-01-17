@@ -87,11 +87,6 @@ Test Concert:
 
 ## Flowchart
 
-![](https://github.com/KaiFig/IA/blob/main/pictures/CS%20IA%20Flowchart%201.jpg)
-**Fig 5** This showcases the flowchart for the calendar page 
-
-![](https://github.com/KaiFig/IA/blob/main/pictures/CS%20IA%20Flowchart%202.jpg)
-**Fig 6** This is the flowchart for the login page.
 
 ## Record of Tasks
 | Task No | Planned Action | Planned Outcome | Time Estimate | Target Completion Date | Criterion |
@@ -375,3 +370,15 @@ The 'Create' section for artists has been well-received. To further support upco
 Lastly, implementing a better feedback system, where users can easily suggest features or report issues, would be a great option. This direct line of communication between users and developers can help future developments.
 
 # Appendix
+
+## Client Interview
+
+
+
+## Success Criteria Contract
+
+N/A
+
+## Client Feedback
+
+

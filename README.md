@@ -190,9 +190,7 @@ Test Concert:
 
 
 
-## Success Criteria 1 and 5
-
-### Success Criteria 1
+## Success Criteria 1
 User System with Social Account Linking
 
 ```python
@@ -206,12 +204,15 @@ class User:
         self.social_accounts[platform] = account_id
 
 # Example usage
-user = User("kaifig", "1234")
+user = User("daimei", "1234")
 user.link_social_account("Google", "google_account_id")
 user.link_social_account("Twitter", "twitter_account_id")
 ```
 
-### Success Criteria 2
+This code demonstrates a user system that allows for linking with social accounts like Google and Twitter, enhancing security and convenience. The `User` class includes methods for initializing user details and linking social media accounts.
+
+
+## Success Criteria 2
 Different GUIs for Subscription Types
 
 ```html
@@ -228,7 +229,10 @@ Different GUIs for Subscription Types
 </div>
 ```
 
-### Success Criteria 3
+This HTML snippet shows how different GUI elements can be displayed based on the user's subscription type. The CSS class dynamically changes according to the subscription type (e.g., 'VIP'), altering the user dashboard's appearance.
+
+
+## Success Criteria 3
 Search, Playlist, and Sharing Features
 
 ```javascript
@@ -247,7 +251,10 @@ function sharePlaylist(playlistId, shareWith) {
 }
 ```
 
-### Success Criteria 4
+This JavaScript example provides functions for searching music and managing playlists, crucial for enhancing user engagement and artist exposure.
+
+
+## Success Criteria 4
 VIP Section Accessibility
 
 ```python
@@ -258,7 +265,10 @@ def access_vip_section(user):
         # Redirect to a standard page or show an access denied message
 ```
 
-### Success Criteria 5
+This function checks if a user has VIP status and grants access to exclusive content in the VIP section, aligning with the client's feature request.
+
+
+## Success Criteria 5
 Miles System for Streaming
 
 ```python
@@ -269,7 +279,10 @@ def update_miles(user, streaming_time):
     # Update the user's miles in the database
 ```
 
-### Success Criteria 6
+The `update_miles` function demonstrates how users can earn miles based on their streaming length, a feature designed to enhance user engagement.
+
+
+## Success Criteria 6
 "Create" Section for Artist Engagement
 
 ```html
@@ -290,6 +303,9 @@ def submit_create_request():
     # Process the request and save it in the database
     return redirect(url_for('request_submitted'))
 ```
+
+This form facilitates artist engagement, allowing users to fill out surveys and request meetings with the label, catering to the client's business expansion strategy.
+
 
 ## Pattern recognition
 

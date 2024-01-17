@@ -373,7 +373,7 @@ Lastly, implementing a better feedback system, where users can easily suggest fe
 
 ## Client Interview
 
-![]()
+![](https://github.com/Verlonskg/TUNECORE/blob/main/Pictures/%20.png)
 
 ## Success Criteria Contract
 
